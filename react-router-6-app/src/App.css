@@ -1,0 +1,880 @@
+/* client/src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: #E0E0E0;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.border{
+  width: 50%;
+  padding: 10px;
+  margin-left: 25%;
+  border: 3px solid #1ABC9C;
+  border-radius: 8px;
+  display: block;
+}
+
+.university {
+  display: flex;
+}
+
+#universityName {
+  color: #000000;
+  font-family: 'noto sans';
+  cursor: pointer;
+}
+
+.university-details {
+  flex: 1;
+  padding: 10px;
+  color: #000000;
+  text-align: center;
+}
+
+.info-box {
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'roboto';
+}
+
+.university-row1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.university-row2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  justify-content: center;
+  align-items: center;
+}
+
+.department-row2{
+  display: flex;
+  margin-top: 8%;
+  padding-right: 5%;
+}
+
+.row-att {
+  max-width: 300px; /* max width of the line of the row-att */
+  white-space: pre-wrap; /* to continue in the next line and fits the content smoothly */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#rat{
+  font-size: 17.5px;
+}
+
+.info-box p {
+  margin: 0;
+  color: #000000;
+}
+
+.leave-space-university {
+  padding-bottom: 30px;
+}
+
+.leave-space-university2 { /* Made to help with the smartphone responsiveness */
+  padding-bottom: 30px;
+}
+
+/* For the link of the university */
+.university-link:active {
+  color: inherit; /* Take the color of the parent (black) */
+}
+
+/* For university and department link */
+.university-link, .department-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*For the buttons and the footer*/
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+footer button {
+  margin: 0 5px; /* spacing between the buttons */
+  padding: 10px 16px 10px 16px; /* padding for the buttons */
+  height: 10%;
+  width: 85px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer button:disabled {
+  background-color: #CCCCCC; /* Change the background color of disabled buttons */
+  cursor: not-allowed; /* Change the cursor style for disabled buttons */
+}
+
+/* location filter */
+.location-filter {
+  position: absolute;
+  left: 30px;
+  margin-top: -20px;
+}
+
+.location-filter h3 {
+  font-family: 'roboto';
+  font-size: 15.5px;
+}
+
+.location-filter button {
+  margin: 0 5px;
+  padding: 10px 16px 10px 16px;
+  height: 10%;
+  width: 85px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.location-filter button:hover {
+  background-color: #16A085; /* Change the background color on hover */
+}
+
+/* for the review button */
+.review-button {
+  position: absolute; /* for independent positioning */
+  right: -125px; /* move to the right 110px more */
+  top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 16px 10px 16px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.review-button:hover {
+  background-color: #16A085; /* Change the background color on hover */
+}
+
+.department-Button {
+  position: relative; /* allows absolute child elements */
+  display: flex;
+  justify-content: center; /* align departmentName and Button horizontally in the center */
+  align-items: center; /* align departmentName and Button vertically in the center */
+}
+
+/* back to universities button */
+.back-to-universities {
+  float: right;
+  margin-right: 25%;
+  display: block;
+  padding: 10px 16px 10px 16px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-to-universities:hover {
+  background-color: #16A085; 
+}
+
+/* Login/Registration buttons */
+.login-signup-buttons {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+}
+
+.login-button, .signup-button {
+  padding: 10px 16px 10px 16px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-button:hover {
+  background-color: #16A085; 
+}
+
+.signup-button:hover {
+  background-color: #16A085; 
+}
+
+/* Login Form */
+.login-form-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: 'noto sans';
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.input-container input {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-container button {
+  padding: 10px 16px 10px 16px;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-container button:hover {
+  background-color: #16A085;
+}
+
+/* For Signup Dropdown */
+.input-container select {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* For logo */
+.header-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+}
+
+.logo {
+  max-width: 160px; /* or whatever size you want */
+  cursor: pointer;
+}
+
+/* For logged in message and logout button */
+.logged-in-message {
+  position: absolute;
+  right: 200px;
+  top: 110px;
+  display: flex;
+}
+
+.logged-in-message  h3{
+  position: absolute;
+  font-size: 15.5px;
+  font-family: 'roboto';
+}
+
+.logout-button {
+  position: absolute;
+  left: 73px;
+  top: 0px;
+  display: flex;
+  padding: 10px 16px;
+  background-color: #e74c3c;  /* Red-ish color for logout */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;  /* Darker red for hover */
+}
+
+/* Star Rating System */
+.overall-rating button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.overall-rating .star {
+  color: gray;
+  font-size: 1.5em;
+}
+
+.overall-rating .on .star {
+  color: yellow;
+}
+
+/* For Review Form */
+.review-form-container {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.two-column-form {
+  display: flex;
+  font-family: 'roboto';
+}
+
+.column-form {
+  flex: 50%;
+}
+
+#formName {
+  color: #000000;
+  font-family: 'noto sans';
+  text-align: center;
+  margin: 16px 0px 26px 0px;
+}
+
+/* For showing the department's reviews */
+.center-reviews { /* To move the content more right */
+  margin-left: 105px;
+}
+
+#reviewTitle{
+  color: #000000;
+  font-family: 'noto sans';
+  text-align: center;
+  padding-bottom: 10px;
+} 
+
+.overall-rating-container { /* To fix overall styling */
+  display: flex;
+  align-items: center;
+}
+
+#reviewOverallTitle{
+  font-family: 'roboto';
+  color: #000000;
+  font-size: 20px;
+}
+
+.bottom-overall-info{
+  margin-top: -10px;
+}
+
+.department-reviews-right-column{
+  padding-top: 70px;
+  margin-right: -130px; /* Used it to leave space between the 2 columns  */
+}
+
+.leave-space-reviews {
+  padding-bottom: 35px;
+}
+
+/* Edit and delete review buttons */
+.review-edit-delete-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.edit-review-button, .delete-review-button {
+  padding: 8px 13px 8px 13px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'roboto';
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-review-button{
+  background-color: #1ABC9C;
+}
+
+.edit-review-button:hover {
+  background-color: #16A085; 
+}
+
+.delete-review-button {
+  background-color: #e74c3c;
+}
+
+.delete-review-button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+
+  .border{
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+    border: 3px solid #1ABC9C;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .location-filter {
+    position: absolute;
+    left: 30px;
+    margin-top: 90px;
+  }
+
+  .location-filter h3 {
+    font-family: 'roboto';
+    font-size: 14px;
+  }
+  
+  .location-filter button {
+    margin: 0 5px;
+    padding: 7.5px 10px 7.5px 10px;
+    height: 10%;
+    width: 85px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .location-filter button:hover {
+    background-color: #16A085; /* Change the background color on hover */
+  }
+
+  .logo {
+    max-width: 120px; /* or whatever size you want */
+    cursor: pointer;
+  }
+
+  .login-button, .signup-button {
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .logout-button {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    display: flex;
+    padding: 7.5px 10px;
+    background-color: #e74c3c;  /* Red-ish color for logout */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .logged-in-message {
+    position: absolute;
+    right: 168px;
+    top: 110px;
+    display: flex;
+  }
+
+  .logged-in-message  h3{
+    position: absolute;
+    font-size: 13px;
+    font-family: 'roboto';
+  }
+
+  .university-details {
+    flex: 1;
+    padding: 5px 0px 5px 0px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .back-to-universities {
+    float: right;
+    margin-right: 12%;
+    display: block;
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .review-button {
+    position: absolute; /* for independent positioning */
+    right: -100px; /* move to the right 110px more */
+    top: 15px;
+    margin-bottom: 10px;
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  footer button {
+    margin: 0 5px; /* spacing between the buttons */
+    padding: 7.5px 10px 7.5px 10px; /* padding for the buttons */
+    height: 10%;
+    width: 85px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .login-form-container h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'noto sans';
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .submit-container button {
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  #reviewTitle{
+    color: #000000;
+    font-family: 'noto sans';
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 28px;
+  } 
+
+  .edit-review-button, .delete-review-button {
+    padding: 7px 9px 7px 9px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  #formName {
+    color: #000000;
+    font-family: 'noto sans';
+    text-align: center;
+    margin: 16px 0px 26px 0px;
+    font-size: 28px;
+  }
+
+  .center-reviews { /* To move the content more right */
+    margin-left: 60px;
+  }
+}
+
+/* Responsive for smartphones */
+@media only screen and (max-width: 767px) {
+
+  .border{
+    width: 90%;
+    padding: 10px;
+    margin-left: 5%;
+    border: 3px solid #1ABC9C;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  #reviewTitle{
+    color: #000000;
+    font-family: 'noto sans';
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+  } 
+
+  #reviewOverallTitle{
+    font-family: 'roboto';
+    color: #000000;
+    font-size: 16px;
+  }
+
+  .center-reviews {
+    margin-left: 30px; 
+  }
+
+  .two-column-form {
+    display: flex;
+    flex-direction: column; 
+    font-family: 'roboto';
+  }
+
+  .column-form {
+    flex: 1; 
+  }
+
+  .bottom-overall-info{
+    margin-top: -10px; 
+  }
+
+  .department-reviews-right-column{
+    padding-top: 0px; 
+    margin-right: 0px; 
+  }
+
+  .university-details {
+    flex: 1;
+    padding: 5px 0px 5px 0px;
+    color: #000000;
+    text-align: center;
+  }
+
+  #universityName {
+    color: #000000;
+    font-family: 'noto sans';
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  #departmentName {
+    color: #000000;
+    font-family: 'noto sans';
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .leave-space-university {
+    padding-bottom: 70px;
+  }
+
+  .review-button {
+    position: absolute; /* for independent positioning */
+    right: -40px; /* move to the right 110px more */
+    top: -55px;
+    margin-bottom: 10px;
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .back-to-universities {
+    float: none; /* no float */
+    display: block;
+    margin: -50px auto -50px auto; /* left and right margins are auto for centering */
+    text-align: center;
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .location-filter {
+    position: absolute;
+    left: 20px;
+    margin-top: 175px;
+  }
+  
+  .location-filter h3 {
+    font-family: 'roboto';
+    font-size: 15.5px;
+    margin-bottom: 10px;
+  }
+  
+  .location-filter button {
+    margin: 0 5px;
+    padding: 6px 4px 6px 4px;
+    height: 10%;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .login-signup-buttons {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+  }
+
+  .login-button, .signup-button {
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .logo {
+    max-width: 140px; /* or whatever size you want */
+    cursor: pointer;
+  }
+  
+  .logout-button {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    display: flex;
+    padding: 7.5px 10px;
+    background-color: #e74c3c;  /* Red-ish color for logout */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .logged-in-message {
+    position: absolute;
+    right: 137px;
+    top: 100px;
+    display: flex;
+  }
+
+  .logged-in-message  h3{
+    position: absolute;
+    font-size: 13px;
+    font-family: 'roboto';
+  }
+
+  .edit-review-button, .delete-review-button {
+    padding: 7.5px 10px 7.5px 10px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .submit-container button {
+    padding: 7.5px 10px 7.5px 10px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  #formName {
+    color: #000000;
+    font-family: 'noto sans';
+    text-align: center;
+    margin: 16px 0px 26px 0px;
+    font-size: 25px;
+  }
+
+  footer button {
+    margin: 0 5px; /* spacing between the buttons */
+    padding: 7.5px 10px 7.5px 10px; /* padding for the buttons */
+    height: 10%;
+    width: 85px;
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .login-form-container h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'noto sans';
+    font-size: 26px;
+    text-align: center;
+  }
+}
