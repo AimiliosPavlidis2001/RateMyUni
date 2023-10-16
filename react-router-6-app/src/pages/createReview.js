@@ -22,7 +22,7 @@ function CreateReview({ isLoggedIn }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        fetch('http://localhost:3000/api/postReview', {
+        fetch('https://ratemyuni.onrender.com/api/postReview', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

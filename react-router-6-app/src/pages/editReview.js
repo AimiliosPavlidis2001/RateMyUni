@@ -23,7 +23,7 @@ function EditReview({ isLoggedIn }) {
     const [review, setReview] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:3000/api/getReviewsByDepartment/${reviewId}`)
+        fetch(`https://ratemyuni.onrender.com/getReviewsByDepartment/${reviewId}`)
             .then(response => response.json())
             .then(data => {
                 setReview(data);
@@ -36,7 +36,7 @@ function EditReview({ isLoggedIn }) {
     const handleUpdateReview = (e) => {
         e.preventDefault();
 
-        fetch(`http://localhost:3000/api/updateReview/${reviewId}`, {
+        fetch(`https://ratemyuni.onrender.com/updateReview/${reviewId}`, {
             method: "PATCH",
             headers: {
                 'Content-Type': 'application/json'

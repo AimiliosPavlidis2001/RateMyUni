@@ -224,7 +224,7 @@ function UniversityDepartments({ setSelectedLocation, resetPage }) { // added al
 
   // Fetch departments based on universityId
   useEffect(() => {
-    fetch(`http://localhost:3000/api/getDepartmentsByUniversity/${universityId}?page=${page}`)
+    fetch(`https://ratemyuni.onrender.com/getDepartmentsByUniversity/${universityId}?page=${page}`)
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data.departments)) {

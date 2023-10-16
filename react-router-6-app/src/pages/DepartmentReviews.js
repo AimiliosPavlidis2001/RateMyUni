@@ -19,7 +19,7 @@ function DepartmentReviews({ isLoggedIn }) {
   useEffect(() => {
     const fetchReviews = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/getReviewsByDepartment/${departmentId}`);
+            const response = await fetch(`https://ratemyuni.onrender.com/api/getReviewsByDepartment/${departmentId}`);
             const data = await response.json();
 
             if (!response.ok) {
@@ -42,7 +42,7 @@ function DepartmentReviews({ isLoggedIn }) {
   // For the delete of the review
   const handleDeleteReview = async (reviewId) => { // Here we are passing to the reviewId, the studentReview._id
     try {
-        const response = await fetch(`http://localhost:3000/api/deleteReview/${reviewId}`, {
+        const response = await fetch(`https://ratemyuni.onrender.com/api/deleteReview/${reviewId}`, {
             method: 'DELETE'
         });
         const data = await response.json();

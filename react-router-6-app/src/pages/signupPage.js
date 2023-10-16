@@ -21,7 +21,7 @@ function SignUpPage() {
 
     // to fetch all the Universities from all the pages and add them all together
     async function fetchAllUniversities(currentPage = 1) {
-        const response = await fetch(`http://localhost:3000/api/getAllUniversities?page=${currentPage}`);
+        const response = await fetch(`https://ratemyuni.onrender.com/getAllUniversities?page=${currentPage}`);
         const data = await response.json();
     
         // If the data the data.universities is undefined/null or it's not an array, stop the function
@@ -49,7 +49,7 @@ function SignUpPage() {
 
     // to fetch all the Departments of a university from all the pages and add them all together
     async function fetchAllDepartments(universityId, currentPage = 1) {
-        const response = await fetch(`http://localhost:3000/api/getDepartmentsByUniversity/${universityId}?page=${currentPage}`);
+        const response = await fetch(`https://ratemyuni.onrender.com/getDepartmentsByUniversity/${universityId}?page=${currentPage}`);
         const data = await response.json();
     
         // If the data or the data.departments is undefined/null or it's not an array, stop the function
@@ -97,7 +97,7 @@ function SignUpPage() {
         };
         
         try {
-            const response = await fetch('http://localhost:3000/api/auth/signup', {
+            const response = await fetch('https://ratemyuni.onrender.com/auth/signup', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
