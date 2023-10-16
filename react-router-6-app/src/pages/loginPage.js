@@ -9,7 +9,7 @@ function LoginPage({ setIsLoggedIn }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        fetch('https://ratemyuni.onrender.com/auth/login', {
+        fetch('https://ratemyuni.onrender.com/api/auth/login', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
