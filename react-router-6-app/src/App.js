@@ -59,7 +59,7 @@ function App() {
   // For the fetching of the universities + Added the option for the filters
   useEffect(() => {
     async function fetchData() {
-        let endpoint = `http://localhost:3000/api/getAllUniversities?page=${page}`;
+        let endpoint = `https://ratemyuni.onrender.com/api/getAllUniversities?page=${page}`;
 
         // Add location to the endpoint if it's selected
         if (selectedLocation) {
